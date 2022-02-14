@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    color: black;
+    background-color: hsla(197, 100%, 50%, 0.25)
+}
+h1, h2 {
+    margin-bottom: 16px;
+}
+#recipe-img {
+    border-radius: 40%;
+}
+
+#chicken-segs {
+    min-width: 100% !important;
+}
+
+@media (max-width: 800px) {
+    #recipe-img {
+        margin-top: 20px;
+    }
+}
+.navsec {
+    background-color: hsla(199, 90%, 4%, 0.55);
+    height: 60px;
+}
+
+.navsec a {
+    text-decoration: none;
+    color: black;
+}
+
+.navsec a:hover {
+    color: hsla(180, 0%, 100%, 0.50)
+}
+.navsec ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navsec ul li {
+    margin-left: 10px;
+    font-size: large;
+}
+.navsec .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navsec .icon-text {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navsec .nav-text {
+    font-weight: bold;
+}
+
+.header {
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.header p {
+    text-align: justify;
+    padding-right: 20px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 30px;
+}
+
+.header img {
+    max-width: 400px;
+}
+
+.segments .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+.segments i {
+    margin-right: 10px;
+}
+
+.segments .segs {
+    background-color: hsla(199, 90%, 4%, 0.55);
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+.segments .recipe-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+.segments .recipe-segs {
+    background-color: hsla(199, 90%, 4%, 0.55);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.segments .recipe-segs ul, ol {
+    padding-left: 10px;
+}
+@media (max-width: 800px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .segments .container {
+        display: block;
+        text-align: center;
+    }
+    .segments .recipe-container {
+        display: block;
+        margin: 20px auto;
+    }
+    .segments .recipe-segs {
+        margin: 0px;
+    }
+}
